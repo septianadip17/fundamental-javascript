@@ -177,7 +177,7 @@ Outputnya
 66666
  */
 let a = 6;
-for (let i = 2; i <= a; i++) {
+for (let i = 1; i <= a; i++) {
   var print = "";
   for (let n = 1; n <= i; n++) {
     print += i;
