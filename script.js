@@ -104,7 +104,7 @@ Outputnya:
 //     arr.push(i)
 //   }
 // }
-// console.log(arr)  
+// console.log(arr)
 
 /**
 Inputnya 3
@@ -113,14 +113,14 @@ Outputnya
 22
 333
  */
-let a = 3
-for (let i = 1; i <= a; i++){
-  var print = ""
-  for (let n = 1; n <= i; n++){
-    print += i.toString()
-  }
-  console.log(print)
-}
+// let a = 3
+// for (let i = 1; i <= a; i++){
+//   var print = ""
+//   for (let n = 1; n <= i; n++){
+//     print += i.toString()
+//   }
+//   console.log(print)
+// }
 
 /**
 Inputnya 3
@@ -161,6 +161,13 @@ Outputnya
 22
 1
  */
+// for (let i = 5; i >= 1; i--) {
+//   let print = "";
+//   for (let j = 0; j < i; j++) {
+//     print += i;
+//   }
+//   console.log(print);
+// }
 
 /**
 2
@@ -169,6 +176,14 @@ Outputnya
 5555
 66666
  */
+let a = 6;
+for (let i = 2; i <= a; i++) {
+  var print = "";
+  for (let n = 1; n <= i; n++) {
+    print += i;
+  }
+  console.log(print);
+}
 
 /**
 11111
