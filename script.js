@@ -195,3 +195,28 @@ for (let i = 1; i <= a; i++) {
 Kalau gue masukin 3, berarti 1 nya ada 3 dst
 Kalau gue masukin 7, berarti 1 nya ada 7 dst
  */
+
+/**
+
+Inputnya: 20
+Outputnya:
+3 - Kelipatan 3
+5 - Kelipatan 5
+6 - Kelipatan 3
+9 - Kelipatan 3
+10 - Kelipatan 5
+12 - Kelipatan 3
+15 - Kelipatan 3 & 5
+dst ...
+
+ */
+
+for (let i = 1; i <= 20; i++){
+  if(i % 3 == 0 && i % 5 == 0){
+    console.log(i + " - Kelipatan 3 & 5")
+  }else if(i % 3 == 0){
+    console.log(i + " - Kelipatan 3")
+  }else if(i % 5 == 0){
+    console.log(i + " - Kelipatan 5")
+  }
+}
