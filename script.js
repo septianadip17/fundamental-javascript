@@ -19,15 +19,11 @@
 // let result = n + s
 // console.log(result)
 
-// gue minta lu ngeprint true/false (bilangan ganjil) untuk nilai n yg gue input
+// // gue minta lu ngeprint true/false (bilangan ganjil) untuk nilai n yg gue input
 // const prompt = require('prompt-sync')()
-// n = Number(prompt('Masukkan angka yang kamu inginkan: '))
-// check = Boolean
-// if(n % 2 == 0){
-//   console.log(check)
-// }else if(n % 2 !== 0){
-//   console.log(check)
-// }
+// let n = Number(prompt('Masukkan angka yang kamu inginkan: '))
+// let check = n % 2 !== 0;
+// console.log(check)
 
 // // gue minta lu ngeprint 1-20 tapi ganjil nya doang
 // for (let i = 1; i <= 20; i++){
@@ -107,18 +103,18 @@
 // }
 // console.log(arr)
 
-// Inputnya 3
-// Outputnya
-// 1
-// 22
-// 333
-for (let firstLoop = 1; firstLoop <= 3; firstLoop++) {
-  output = "";
-  for (let secondLoop = 1; secondLoop <= firstLoop; secondLoop++) {
-    output += firstLoop;
-  }
-  console.log(output);
-}
+// // Inputnya 3
+// // Outputnya
+// // 1
+// // 22
+// // 333
+// for (let firstLoop = 1; firstLoop <= 3; firstLoop++) {
+//   output = "";
+//   for (let secondLoop = 1; secondLoop <= firstLoop; secondLoop++) {
+//     output += firstLoop;
+//   }
+//   console.log(output);
+// }
 
 /**
 Inputnya 3
@@ -190,3 +186,5 @@ Kalau gue masukin 7, berarti 1 nya ada 7 dst
 //     console.log(i + " - kelipatan 5")
 //   )
 // }
+
+// javascript fundamental
