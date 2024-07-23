@@ -144,7 +144,7 @@ Outputnya
 // // output: Rp. 212.500 (harga setelah discount)
 // const sepatu = 250000
 // diskon = 0.15
-// diskonSepatu = sepatu * diskon 
+// diskonSepatu = sepatu * diskon
 // console.log(`Harga awal: Rp. ${sepatu}`)
 // console.log("discount: 15%")
 // console.log(sepatu - diskon * sepatu)
@@ -164,6 +164,13 @@ Outputnya
 5555
 66666
  */
+for (let i = 2; i <= 6; i++) {
+  string = "";
+  for (let j = 1; j <= i; j++) {
+    string += i;
+  }
+  console.log(string);
+}
 
 /**
 11111
