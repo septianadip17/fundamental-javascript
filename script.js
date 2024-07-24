@@ -157,20 +157,20 @@ Outputnya
 1
  */
 
-/**
-2
-33
-444
-5555
-66666
- */
-for (let i = 2; i <= 6; i++) {
-  string = "";
-  for (let j = 1; j <= i; j++) {
-    string += i;
-  }
-  console.log(string);
-}
+// /**
+// 2
+// 33
+// 444
+// 5555
+// 66666
+//  */
+// for (let i = 2; i <= 6; i++) {
+//   string = "";
+//   for (let j = 1; j <= i; j++) {
+//     string += i;
+//   }
+//   console.log(string);
+// }
 
 /**
 11111
@@ -204,3 +204,8 @@ Kalau gue masukin 7, berarti 1 nya ada 7 dst
 // }
 
 // javascript fundamental
+
+let arr = [10, 20, 30];
+arr[100] = 40;
+console.log(arr.length)
+
