@@ -206,6 +206,5 @@ Kalau gue masukin 7, berarti 1 nya ada 7 dst
 // javascript fundamental
 
 let arr = [10, 20, 30];
-arr[100] = 40;
-console.log(arr.length)
-
+arr[102] = 40;
+console.log(arr.length);
