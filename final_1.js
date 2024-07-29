@@ -58,7 +58,7 @@ while (lanjutBelanja) {
   console.log("");
 
   // file validation.js & function validationBelanja()
-  if (barangBelanja < 0 || barangBelanja >= barang.length) {
+  if (barangBelanja <= 0 || barangBelanja >= barang.length) {
     console.log("Barang yang kamu masukkan tidak ada");
     continue;
   }

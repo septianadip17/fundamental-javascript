@@ -1,5 +1,5 @@
-function TotalHarga(totalBarang, harga){
+function Calculation(totalBarang, harga){
   return totalBarang * harga
 }
 
-module.exports = TotalHarga
+module.exports = Calculation

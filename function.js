@@ -6,10 +6,11 @@
 // }
 // console.log(jumlahDuaBilangan(2,3))
 
-// function expression
-var jumlahDuaBilangan = function (a, b) {
+function jumlahDuaBilangan(a, b) {
   var total;
   total = a + b;
   return total;
 };
-console.log(jumlahDuaBilangan(3,3))
+
+var ret = jumlahDuaBilangan(3,3);
+console.log(ret)
