@@ -27,6 +27,7 @@ INFORMATION: (jangan di print, cuma info)
 
 const prompt = require("prompt-sync")();
 
+// file information.js & function information()
 console.log("Aplikasi Kasir:");
 console.log("");
 console.log("Barang-barang yang tersedia adalah: ");
@@ -38,7 +39,9 @@ console.log(`
 5. Voucher Google Play (Rp. 52.000)`
 );
 console.log("");
+// ===
 
+// file constant
 const barang = [
   { name: "Minyak Goreng 2L Sania", price: 35000 },
   { name: "Tepung 1kg", price: 12000 },
@@ -46,6 +49,7 @@ const barang = [
   { name: "Saos ABC 1btl", price: 15000 },
   { name: "Voucher Google Play", price: 52000 },
 ];
+// ===
 
 let lanjutBelanja = true;
 
@@ -53,22 +57,29 @@ while (lanjutBelanja) {
   const barangBelanja = Number(prompt("Pilih barang yang ingin dibeli? ")) - 1;
   console.log("");
 
+  // file validation.js & function validationBelanja()
   if (barangBelanja < 0 || barangBelanja >= barang.length) {
     console.log("Barang yang kamu masukkan tidak ada");
     continue;
   }
+  // ===
 
   const barangDipilih = barang[barangBelanja];
   const totalBarang = Number(
     prompt("Masukkan total barang yang ingin dibeli? ")
   );
-  const totalPrice = totalBarang * barangDipilih.price;
 
+  // file calculation.js & function getTotalPrice()
+  const totalPrice = totalBarang * barangDipilih.price;
+  // ===
+
+  // file information.js & function exactOutput()
   console.log("");
   console.log(
     `Barang yang anda beli adalah ${barangDipilih.name} berjumlah ${totalBarang}, total yang harus anda bayar adalah Rp. ${totalPrice}`
   );
   console.log("");
+  // ===
 
   const shopAgain = prompt(
     "Apakah anda ingin belanja lagi (y/n)? "
