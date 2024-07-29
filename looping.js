@@ -32,8 +32,6 @@
 // 3
 // 3
 
-
-
 /**
 
 firstNum = 1
@@ -64,10 +62,66 @@ firstNum = 4 (false) reasonnya 4 > 3
 
  */
 
-for (let firstNum = 1; firstNum <= 3; firstNum++) {
-  // akan selalu menjalankan code yg ada didalamnya
-  for (let endNum = 1; endNum <= firstNum; endNum++) {
-    // akan selalu menjalankan code yg ada didalamnya
-    console.log(firstNum)
+// for (let firstNum = 1; firstNum <= 3; firstNum++) {
+//   // akan selalu menjalankan code yg ada didalamnya
+//   for (let endNum = 1; endNum <= firstNum; endNum++) {
+//     // akan selalu menjalankan code yg ada didalamnya
+//     console.log(firstNum)
+//   }
+// } // nambahin nya disini firstNum++
+
+// Outputnya:
+// 1
+// 1
+// 2
+// 1
+// 2
+// 3
+// 1
+// 2
+// 3
+// 4
+// 1
+// 2
+// 3
+// 4
+// 5
+// for (let a = 1; a <= 5; a++){
+//   for (let b = 1; b <= a; b++){
+//     console.log(b)
+//   }
+// }
+
+/**
+Inputnya 3
+Outputnya
+*
+**
+***
+*/
+
+// for (let i = 1; i <= 3; i++) {
+//   star = "";
+//   for (let j = 1; j <= i; j++) {
+//     star += "*";
+//   }
+//   console.log(star);
+// }
+
+/**
+Inputnya 3
+Outputnya
+*** (loop-2 jalan 3x)
+** (loop-2 jalan 2x)
+* (loop-2 jalan 1x)
+*/
+
+for (let i = 3; i >= 1; i--) {
+  star = "";
+  // for (let j = 1; i >= j; j++) {
+  for (let j = 1; j <= i; j++) {
+    star += "*";
   }
-} // nambahin nya disini firstNum++
+  console.log(star);
+}
+
