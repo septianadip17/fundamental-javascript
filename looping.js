@@ -108,20 +108,33 @@ Outputnya
 //   console.log(star);
 // }
 
-/**
-Inputnya 3
-Outputnya
-*** (loop-2 jalan 3x)
-** (loop-2 jalan 2x)
-* (loop-2 jalan 1x)
-*/
+// /**
+// Inputnya 3
+// Outputnya
+// *** (loop-2 jalan 3x)
+// ** (loop-2 jalan 2x)
+// * (loop-2 jalan 1x)
+// */
+// for (let i = 3; i >= 1; i--) {
+//   star = "";
+//   // for (let j = 1; i >= j; j++) {
+//   for (let j = 1; j <= i; j++) {
+//     star += "*";
+//   }
+//   console.log(star);
+// }
 
-for (let i = 3; i >= 1; i--) {
-  star = "";
-  // for (let j = 1; i >= j; j++) {
-  for (let j = 1; j <= i; j++) {
-    star += "*";
+// /**
+// 2
+// 33
+// 444
+// 5555
+// 66666
+//  */
+for (let i = 2; i <= 6; i++) {
+  string = "";
+  for (let j = 2; j <= i; j++) {
+    string += i;
   }
-  console.log(star);
+  console.log(string);
 }
-
