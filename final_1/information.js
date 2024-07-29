@@ -1,4 +1,4 @@
-function information() {
+function Information() {
   console.log("Aplikasi Kasir:");
   console.log("");
   console.log("Barang-barang yang tersedia adalah: ");
@@ -8,7 +8,6 @@ function information() {
 3. Mie Goreng 1pcs (Rp. 3.000)
 4. Saos ABC 1btl (Rp. 15.000)
 5. Voucher Google Play (Rp. 52.000)`);
-  console.log("");
 }
 
-console.log(information())
+module.exports = Information;
