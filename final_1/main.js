@@ -2,7 +2,7 @@ const prompt = require("prompt-sync")();
 const Information = require("./information");
 const ValidationBelanja = require("./validation");
 const Calculation = require("./calculation");
-const {barang} = require("./constant")
+const { barang } = require("./constant");
 
 Information();
 
@@ -20,7 +20,6 @@ while (lanjutBelanja) {
     prompt("Masukkan total barang yang ingin dibeli? ")
   );
   totalHarga = Calculation(totalBarang, barangDipilih.price);
-  
 
   console.log("");
   console.log(
@@ -29,7 +28,7 @@ while (lanjutBelanja) {
   console.log("");
 
   const shopAgain = prompt(
-    "Apakah anda ingin belanja lagi (y/n)? "
+    "Apakah anda ingin belanja lagi (y/n)?"
   ).toLowerCase();
   lanjutBelanja = shopAgain === "y";
 }
