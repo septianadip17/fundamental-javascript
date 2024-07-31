@@ -5,8 +5,10 @@ const Calculation = require("./calculation");
 const { barang } = require("./constant");
 
 Information();
+console.log();
 
 let lanjutBelanja = true;
+let belanjaan = [];
 
 while (lanjutBelanja) {
   const barangBelanja = Number(prompt("Pilih barang yang ingin dibeli? ")) - 1;
@@ -27,10 +29,29 @@ while (lanjutBelanja) {
   );
   console.log("");
 
+  belanjaan.push({
+    name: barangDipilih.name,
+    quantity: totalBarang,
+    price: totalHarga,
+  });
+  console.log(belanjaan)
+
   const shopAgain = prompt(
     "Apakah anda ingin belanja lagi (y/n)?"
   ).toLowerCase();
   lanjutBelanja = shopAgain === "y";
 }
+
+console.log("Daftar belanjaan Anda:");
+belanjaan.forEach((item, index) => {
+  console.log(
+    `${index + 1}. ${item.name} - Jumlah: ${item.quantity}, Total Harga: Rp. ${
+      item.price
+    }`
+  );
+});
+const semuaBelanjaan = belanjaan.reduce((total, item) => total + item.price, 0);
+
+console.log(`Total semua belanjaan: Rp. ${semuaBelanjaan}`);
 
 console.log("Terima kasih telah berbelanja!");
