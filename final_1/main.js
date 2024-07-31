@@ -34,12 +34,13 @@ while (lanjutBelanja) {
     quantity: totalBarang,
     price: totalHarga,
   });
-  console.log(belanjaan)
+  // console.log(belanjaan)
 
   const shopAgain = prompt(
-    "Apakah anda ingin belanja lagi (y/n)?"
+    "Apakah ada barang yang ingin dibeli lagi (y/n)? "
   ).toLowerCase();
   lanjutBelanja = shopAgain === "y";
+  console.log()
 }
 
 console.log("Daftar belanjaan Anda:");
